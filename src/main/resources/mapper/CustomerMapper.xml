@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.CustomerMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.domain.Customer">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="customerId" column="customer_id" jdbcType="VARCHAR"/>
+            <result property="customerName" column="customer_name" jdbcType="VARCHAR"/>
+            <result property="province" column="province" jdbcType="VARCHAR"/>
+            <result property="area" column="area" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="industry" column="industry" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="commonAlertLevelSms" column="common_alert_level_sms" jdbcType="TINYINT"/>
+            <result property="commonAlertLevelEmail" column="common_alert_level_email" jdbcType="TINYINT"/>
+            <result property="managerAlertLevelSms" column="manager_alert_level_sms" jdbcType="TINYINT"/>
+            <result property="managerAlertLevelEmail" column="manager_alert_level_email" jdbcType="TINYINT"/>
+            <result property="shUser" column="sh_user" jdbcType="VARCHAR"/>
+            <result property="shPassword" column="sh_password" jdbcType="VARCHAR"/>
+            <result property="autoProtectMessage" column="auto_protect_message" jdbcType="TINYINT"/>
+            <result property="applicationKey" column="application_key" jdbcType="TINYINT"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,customer_id,customer_name,
+        province,area,address,
+        industry,status,create_time,
+        common_alert_level_sms,common_alert_level_email,manager_alert_level_sms,
+        manager_alert_level_email,sh_user,sh_password,
+        auto_protect_message,application_key,update_time
+    </sql>
+</mapper>

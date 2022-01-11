@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.AttackAlarmMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.domain.AttackAlarm">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="alarmId" column="alarm_id" jdbcType="VARCHAR"/>
+            <result property="detectorId" column="detector_id" jdbcType="SMALLINT"/>
+            <result property="dstIp" column="dst_ip" jdbcType="VARCHAR"/>
+            <result property="startTime" column="start_time" jdbcType="TIMESTAMP"/>
+            <result property="endTime" column="end_time" jdbcType="TIMESTAMP"/>
+            <result property="attackType" column="attack_type" jdbcType="VARCHAR"/>
+            <result property="maxPps" column="max_pps" jdbcType="DOUBLE"/>
+            <result property="maxBps" column="max_bps" jdbcType="DOUBLE"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="mailStatus" column="mail_status" jdbcType="TINYINT"/>
+            <result property="smsStatus" column="sms_status" jdbcType="TINYINT"/>
+            <result property="alarmLevel" column="alarm_level" jdbcType="TINYINT"/>
+            <result property="customerId" column="customer_id" jdbcType="VARCHAR"/>
+            <result property="customerName" column="customer_name" jdbcType="VARCHAR"/>
+            <result property="groupId" column="group_id" jdbcType="VARCHAR"/>
+            <result property="groupName" column="group_name" jdbcType="VARCHAR"/>
+            <result property="lineCode" column="line_code" jdbcType="VARCHAR"/>
+            <result property="ipv6Code" column="ipv6_code" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="kafkaStatus" column="kafka_status" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,alarm_id,detector_id,
+        dst_ip,start_time,end_time,
+        attack_type,max_pps,max_bps,
+        status,mail_status,sms_status,
+        alarm_level,customer_id,customer_name,
+        group_id,group_name,line_code,
+        ipv6_code,update_time,kafka_status
+    </sql>
+</mapper>

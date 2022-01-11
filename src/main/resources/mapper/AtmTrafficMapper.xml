@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.AtmTrafficMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.domain.AtmTraffic">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="alarmId" column="alarm_id" jdbcType="VARCHAR"/>
+            <result property="bps" column="bps" jdbcType="DOUBLE"/>
+            <result property="pps" column="pps" jdbcType="DOUBLE"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,alarm_id,bps,
+        pps,update_time
+    </sql>
+</mapper>
