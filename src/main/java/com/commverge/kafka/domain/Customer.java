@@ -1,5 +1,6 @@
-package com.example.domain;
+package com.commverge.kafka.domain;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -19,16 +20,19 @@ public class Customer implements Serializable {
      * 自增ID
      */
     @TableId(type = IdType.AUTO)
+    @JSONField(serialize=false)
     private Integer id;
 
     /**
      * 客户ID（来自云堤工单）
      */
+    @JSONField(name="custumer_id")
     private String customerId;
 
     /**
      * 客户名称
      */
+    @JSONField(name="custumer_name")
     private String customerName;
 
     /**
@@ -54,56 +58,68 @@ public class Customer implements Serializable {
     /**
      * 客户状态（0，删除；1，正常;2，失效）
      */
+    @JSONField(serialize=false)
     private Integer status;
 
     /**
      * 创建时间
      */
+    @JSONField(serialize=false)
     private Date createTime;
 
     /**
      * 客户联系人短信告警级别(1-5)
      */
+    @JSONField(serialize=false)
     private Integer commonAlertLevelSms;
 
     /**
      * 客户联系人邮件告警级别(1-5)
      */
+    @JSONField(serialize=false)
     private Integer commonAlertLevelEmail;
 
     /**
      * 客户经理短信告警级别（1-5）
      */
+    @JSONField(serialize=false)
     private Integer managerAlertLevelSms;
 
     /**
      * 客户经理邮件告警级别（1-5）
      */
+    @JSONField(serialize=false)
     private Integer managerAlertLevelEmail;
 
     /**
      * 上海本地防护用户名
      */
+    @JSONField(serialize=false)
     private String shUser;
 
     /**
      * 上海本地防护密码
      */
+    @JSONField(serialize=false)
     private String shPassword;
 
     /**
      * 自动清洗通知方式（null，不发送；1，短信；2，邮件）
      */
+    @JSONField(serialize=false)
     private Integer autoProtectMessage;
+
 
     /**
      * 是否有应用层清洗（0，没有。1，有
      */
+    @JSONField(serialize=false)
     private Integer applicationKey;
 
     /**
      * 最后修改时间
      */
+    @JSONField(serialize=false)
     private Date updateTime;
 
     @TableField(exist = false)

@@ -1,9 +1,9 @@
-package com.example.service.impl;
+package com.commverge.kafka.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.domain.AtmTraffic;
-import com.example.service.AtmTrafficService;
-import com.example.mapper.AtmTrafficMapper;
+import com.commverge.kafka.domain.AtmTraffic;
+import com.commverge.kafka.service.AtmTrafficService;
+import com.commverge.kafka.mapper.AtmTrafficMapper;
 import org.springframework.stereotype.Service;
 
 /**

@@ -1,6 +1,6 @@
-package com.example.mapper;
+package com.commverge.kafka.mapper;
 
-import com.example.domain.AtmTraffic;
+import com.commverge.kafka.domain.AtmTraffic;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

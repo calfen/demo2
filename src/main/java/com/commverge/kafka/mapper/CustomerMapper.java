@@ -1,6 +1,6 @@
-package com.example.mapper;
+package com.commverge.kafka.mapper;
 
-import com.example.domain.Customer;
+import com.commverge.kafka.domain.Customer;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -15,7 +15,7 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface CustomerMapper extends BaseMapper<Customer> {
     @Select("select customer_name from customer where id = #{id}")
-    Customer queryById(@Param("id") Integer id);
+    String queryById(@Param("id") int id);
 
 
 }

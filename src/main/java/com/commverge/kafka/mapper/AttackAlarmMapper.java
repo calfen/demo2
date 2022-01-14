@@ -1,6 +1,6 @@
-package com.example.mapper;
+package com.commverge.kafka.mapper;
 
-import com.example.domain.AttackAlarm;
+import com.commverge.kafka.domain.AttackAlarm;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

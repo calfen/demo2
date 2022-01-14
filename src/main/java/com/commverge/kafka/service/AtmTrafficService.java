@@ -1,6 +1,6 @@
-package com.example.service;
+package com.commverge.kafka.service;
 
-import com.example.domain.AtmTraffic;
+import com.commverge.kafka.domain.AtmTraffic;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

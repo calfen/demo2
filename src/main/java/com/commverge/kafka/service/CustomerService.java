@@ -1,7 +1,8 @@
-package com.example.service;
+package com.commverge.kafka.service;
 
-import com.example.domain.Customer;
+import com.commverge.kafka.domain.Customer;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.sun.tools.javac.util.List;
 
 /**
 * @author calfen
@@ -9,5 +10,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 * @createDate 2022-01-11 17:28:06
 */
 public interface CustomerService extends IService<Customer> {
+
 
 }

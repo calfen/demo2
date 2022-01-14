@@ -5,3 +5,20 @@ spring:
     username: guard
     password: cOmmverge13
     driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+
+
+
+person:
+  name: calfen
+  age: 47
+  departperson:
+    - xuhongbin
+    - maxiujun
+    - qiubin
+    - ruanjianghang
+
+

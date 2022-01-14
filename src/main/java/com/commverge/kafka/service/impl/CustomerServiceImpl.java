@@ -1,9 +1,9 @@
-package com.example.service.impl;
+package com.commverge.kafka.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.domain.Customer;
-import com.example.service.CustomerService;
-import com.example.mapper.CustomerMapper;
+import com.commverge.kafka.mapper.CustomerMapper;
+import com.commverge.kafka.domain.Customer;
+import com.commverge.kafka.service.CustomerService;
 import org.springframework.stereotype.Service;
 
 /**

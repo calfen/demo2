@@ -1,9 +1,9 @@
-package com.example.service.impl;
+package com.commverge.kafka.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.domain.AttackAlarm;
-import com.example.service.AttackAlarmService;
-import com.example.mapper.AttackAlarmMapper;
+import com.commverge.kafka.domain.AttackAlarm;
+import com.commverge.kafka.mapper.AttackAlarmMapper;
+import com.commverge.kafka.service.AttackAlarmService;
 import org.springframework.stereotype.Service;
 
 /**

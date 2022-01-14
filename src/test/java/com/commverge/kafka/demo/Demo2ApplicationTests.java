@@ -1,9 +1,7 @@
-package com.example.demo;
+package com.commverge.kafka.demo;
 
-import com.example.domain.AtmTraffic;
-import com.example.domain.Customer;
-import com.example.mapper.AtmTrafficMapper;
-import com.example.mapper.CustomerMapper;
+import com.commverge.kafka.mapper.CustomerMapper;
+import com.commverge.kafka.domain.Customer;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

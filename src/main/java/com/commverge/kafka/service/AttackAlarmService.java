@@ -1,6 +1,6 @@
-package com.example.service;
+package com.commverge.kafka.service;
 
-import com.example.domain.AttackAlarm;
+import com.commverge.kafka.domain.AttackAlarm;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

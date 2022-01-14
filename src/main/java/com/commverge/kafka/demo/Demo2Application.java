@@ -1,11 +1,11 @@
-package com.example.demo;
+package com.commverge.kafka.demo;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = "com.example.controller")
-@MapperScan("com.example.mapper")
+@SpringBootApplication(scanBasePackages = "com.commverge.kafka")
+@MapperScan("com.commverge.kafka.mapper")
 public class Demo2Application {
 
     public static void main(String[] args) {

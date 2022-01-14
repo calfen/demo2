@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.mapper.AttackAlarmMapper">
+<mapper namespace="com.commverge.kafka.mapper.AttackAlarmMapper">
 
-    <resultMap id="BaseResultMap" type="com.example.domain.AttackAlarm">
+    <resultMap id="BaseResultMap" type="com.commverge.kafka.domain.AttackAlarm">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="alarmId" column="alarm_id" jdbcType="VARCHAR"/>
             <result property="detectorId" column="detector_id" jdbcType="SMALLINT"/>
