@@ -5,6 +5,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.commverge.kafka.domain.Customer;
 import com.commverge.kafka.domain.Person;
 import com.commverge.kafka.mapper.CustomerMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +16,7 @@ import java.util.List;
 @RestController
 public class HelloWoldController {
 
-
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Resource
     private CustomerMapper customerMapper;
@@ -41,6 +43,7 @@ public class HelloWoldController {
     public Person person;
     @RequestMapping("/hello/person")
     public Person showPerson(){
+        logger.info("retrun person");
         return person;
     }
 
